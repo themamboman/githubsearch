@@ -47,7 +47,7 @@ Example usage:
 The button at the top should return to the initial screen
 
 - Below the button, it will show the owner/repo that will be serach for issues (should say facebook/react)
-There is code in place to change this but I've disabled it on the UI for simplicity. To Enable it, change line 25
+There is code in place to change this but I've disabled it on the UI for simplicity. To Enable it, change line 26
 of SearchForm.js from `useState(false)` to `useState(true)` and run `npm start` again (if it didn't automatically
 rebuild and refresh the page)
 
