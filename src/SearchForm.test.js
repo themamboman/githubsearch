@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import { act, create } from 'react-test-renderer';
-//import mockAxios from 'axios'; 
 import SearchForm, { queryGitHub } from './SearchForm';
 
-//mockAxios.get.mockImplementationOnce(() => {
+const useDebounce = jest.fn();
+
 jest.mock('axios', () => ({
   get: jest.fn((_url, _body) => {
     console.log("mock axios get");
