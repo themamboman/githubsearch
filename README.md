@@ -5,15 +5,33 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## What this Project demonstrates
 
 - The ability to produce a ReactJS front-end application that meets the requirements of the task
-- Use of ReactJS Hooks
+- The ability to make asynchronous queries to a RESTful API on a remote server
+- The understanding of debouncing user input before querying a server's API to avoid exceeding rate limits
+- The ability to parse returned data for relevant information
 - The ability to make a single-page app that changes display based on the state of variables
 - The ability to use the Material-UI framework to speed development
-- Understanding of debouncing user input before querying a server's API to avoid exceeding rate limits
-- The ability to code a custom hook
 - The ability to build a UI that is navigable by keyboard input as well as mouse
-- The ability to parse returned data for relevant information
+- Use of ReactJS Hooks
 
 
+---
+## Original Task description
+
+This is original Task description sent to me for this project:
+
+### Goal
+-   We would like to have an opportunity to learn about your skills. 
+    This is an open ended project where you should put as much effort as you consider right to show what you think is important.
+
+
+### Delivery of Code
+- Please share a Github repo with your code.
+
+
+### Task
+- Using Github’s API (https://developer.github.com/), build an application with an autocomplete input box for searching issues for React’s repo (https://github.com/facebook/react/issues). 
+Input and results should be able to navigate via keyboard shortcuts. Each result should have but not limited to, the issue’s title and labels.
+---
 ## Setting up and running the demo
 
 Clone the repo to a directory.  In that directory, run `npm install` to set up the node modules needed.  This will take 
@@ -33,7 +51,7 @@ There is code in place to change this but I've disabled it on the UI for simplic
 of SearchForm.js from `useState(false)` to `useState(true)` and run `npm start` again (if it didn't automatically
 rebuild and refresh the page)
 
-- Start typing a search term in the `Search issues` box.  For example, type "devtools" and wait a moment. Once the
+- Start typing a search term in the `Search issues` box.  For example, type "devtools". Once the
 debounce timer (set to 500 ms) times out, it will make a network call to the github api endpoint.  If the browser
 inspector is up and showing the network tab, you should see this XHR call:
 `https://api.github.com/search/issues?q=devtools%2Bin%3Atitle%2Brepo%3Afacebook%2Freact`
@@ -57,7 +75,7 @@ Whenever one is highlightd, the `Enter` key will do the same as clicking the lin
 
 ### Unit tests
 
-A few, minimal tests were included to exercise the UI elements.  From the command prompt in the local diretory, type `npm test` 
+A few, minimal tests were included to exercise the UI elements.  From the command prompt in the local directory, type `npm test` 
 to run the UI tests
 
 ### `npm run build`
